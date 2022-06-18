@@ -2103,3 +2103,4 @@ do -- Example UI
 	Tab:Show()
 	library:FormatWindows()
 end
+return library
