@@ -1,0 +1,10 @@
+return function (FunctionName: string)
+    for i,v in pairs(getgc(false)) do
+        if type(v) == "function" and not is_synapse_function(v) then
+            if getinfo(v).name:lower() == FunctionName:lower() then
+                return v
+            end
+        end
+    end
+end
+
